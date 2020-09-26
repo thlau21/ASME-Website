@@ -1,0 +1,63 @@
+header {
+  color: orange;
+  text-align: center;
+  margin: 100px auto;
+}
+
+.about-header {
+  background-color: black;
+  color: orange;
+  text-align: center;
+  margin: 100px auto;
+}
+
+.nav-wrapper {
+  display: flex;
+}
+
+.nav > .nav-wrapper > div {
+  text-decoration: none;
+  margin: 0 auto;
+}
+
+.nav-link-wrapper {
+  height: 22px;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.5s;
+}
+
+.nav-link-wrapper a {
+  color: gray;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+.nav-link-wrapper:hover {
+  border-bottom: 1px solid black;
+}
+
+.nav-link-wrapper a:hover {
+  color: black;
+}
+
+.footer {
+  text-align: center;
+  bottom: 0;
+}
+
+h2 {
+  color: orange;
+  text-align: center;
+}
+/*body {
+  background-image: url(images/Tiger.jpg);
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  border: 3px solid black;
+}
+*/
