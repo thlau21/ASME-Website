@@ -1,16 +1,41 @@
+/*Master styles*/
 header {
   color: orange;
   text-align: center;
   margin: 100px auto;
 }
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
 
 .about-header {
-  background-color: black;
   color: orange;
   text-align: center;
   margin: 100px auto;
 }
+.footer {
+  text-align: center;
+  bottom: 0;
+  padding-top: 100px;
+}
 
+h1 {
+  color: orange;
+  text-align: center;
+  margin: 0 auto;
+}
+h2 {
+  color: orange;
+  text-align: center;
+  margin: 0 auto;
+}
+p {
+  margin: 0 auto;
+  text-align: center;
+  width: 80%;
+}
+/*Nav styles*/
 .nav-wrapper {
   display: flex;
 }
@@ -39,16 +64,21 @@ header {
 .nav-link-wrapper a:hover {
   color: black;
 }
-
-.footer {
-  text-align: center;
-  bottom: 0;
+/*slide animation*/
+.slide {
+  height: 100vh;
+  position: relative;
 }
-
-h2 {
-  color: orange;
-  text-align: center;
+.image-slideshow {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: none;
 }
+/*.image-slideshow:first-child {
+  display: block;
+}*/
+
 /*body {
   background-image: url(images/Tiger.jpg);
 }

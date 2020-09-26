@@ -5,9 +5,10 @@
     <title>Page Title</title>
     <link href="styles.css" rel="stylesheet" />
   </head>
-  <body style="background-color: orange">
+  <body>
     <header>
-      <h1>
+      <a target="_blank" href="index.html"><img src="images/Logo_of_the_ASME.jpg"></a>
+      <h1 style="text-decoration: none;">
         <strong
           ><a href="index.html"
             >ASME CLUB AT UNIVERSITY OF THE PACIFIC</a
@@ -15,17 +16,43 @@
         >
       </h1>
     </header>
-    <div class="about-header">
-      <h2>All about us</h2>
-    </div>
-    <p>
-      We are the student chapter of the American Society of Mechanical Engineers
-      club at the University of the Pacific. Our mission is to provide a
-      community for engineers to come together and learn from each other and
-      industry professionals as well as to work on cool projects. Our club has
-      recently had a lively revival due new leadership and a very successful
-      project of building a formula one car. Contact us if you are interested in
-      joining. All majors are welcome!
-    </p>
+    <main>
+      <!--class for nav bar-->
+      <div class="nav">
+        <!--class for each nav bar component-->
+        <div class="nav-wrapper">
+          <!--class for nav links-->
+          <div class="nav-link-wrapper">
+            <a href="about.html">About us</a>
+          </div>
+          <div class="nav-link-wrapper">
+            <a href="contact.html">Contact</a>
+          </div>
+          <div class="nav-link-wrapper">
+            <a href="new-member.html">New Member Info</a>
+          </div>
+        </div>
+      </div>
+      <div class="about-header">
+        <h2>All about us</h2>
+      </div>
+      <p>
+        We are the student chapter of the American Society of Mechanical
+        Engineers club at the University of the Pacific. Our mission is to
+        provide a community for engineers to come together and learn from each
+        other and industry professionals as well as to work on cool projects.
+        Our club has recently had a lively revival due new leadership and a very
+        successful project of building a formula one car. Contact us if you are
+        interested in joining. All majors are welcome!
+      </p>
+    </main>
+    <div class="footer">
+      <!--links on pictures to click for social media and such-->
+      <a target="_blank" href="https://pacific.presence.io/organization/american-society-of-mechanical-engineers"
+        ><img src="images/Pacific.jpg" alt="logo for pacific presence" style="width: 42px; height: 42px;"
+      /></a>
+      <a target="_blank" href="https://www.instagram.com/asme_uop/?hl=en"><img src="images/instagram.png" alt="logo for instagram" style="width: 50px; height: 50px;"></a>
+      <a target="_blank" href="https://www.youtube.com/channel/UCL9h1Lb8lJJjfLdnCe2H9_w?app=desktop"><img src="images/youtube-play.png" alt="logo for youtube" style="width: 50px; height: 50px;"></a>
+    </footer>
   </body>
 </html>
