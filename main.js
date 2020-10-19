@@ -1,6 +1,6 @@
 const slideshowImages = document.querySelectorAll(".slide .image-slideshow");
 
-const nextImageDelay = 3000;
+const nextImageDelay = 6000; // I changed this to 6000. -Scotty Lucas
 let currentImageCounter = 0;
 
 slideshowImages[currentImageCounter].style.display = "block";
