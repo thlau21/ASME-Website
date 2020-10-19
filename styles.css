@@ -4,6 +4,15 @@ header {
   text-align: center;
   margin: 100px auto;
 }
+
+/*I added this style section to the body so that the website takes up the full browser window
+You must explicitely say that you dont want any margin on the body because it has a margin by default  */
+Body {
+  margin-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: 0px;
+}
 .container {
   display: grid;
   grid-template-columns: 1fr;
@@ -19,7 +28,7 @@ header {
   bottom: 0;
   padding-top: 80px;
   padding-bottom: 80px;
-  background-color: gray;
+  background-color: #212529; /*I gave this a darker gray color*/
 }
 
 .box {
@@ -29,12 +38,12 @@ header {
 h1 {
   color: orange;
   text-align: center;
-  margin: 0 auto;
+  margin: 20 auto; /* I gave this heading a top and bottom margin of 20 so that it isn't so squished*/
 }
 h2 {
   color: orange;
   text-align: center;
-  margin: 0 auto;
+  margin: 50px auto; /* I gave top and bottom margin to this element*/
 }
 p {
   margin: 0 auto;
@@ -54,7 +63,16 @@ p {
   text-decoration: none;
   margin: 0 auto;
 }
-
+/* .left-link{
+  margin-right: 75x;
+}
+.center-link{
+  margin-right: 75px;
+  margin-left: 75px;
+}
+.right-link{
+  margin-left: 75px;
+} */
 .nav-link-wrapper {
   height: 22px;
   border-bottom: 1px solid transparent;
