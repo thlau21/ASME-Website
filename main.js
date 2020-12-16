@@ -12,3 +12,14 @@ function nextImage() {
   currentImageCounter = (currentImageCounter + 1) % slideshowImages.length;
   slideshowImages[currentImageCounter].style.display = "block";
 }
+
+function displayPreviousImage(){
+  slideshowImages[currentImageCounter].style.display = "none";
+  if(currentImageCounter == 0){
+    currentImageCounter = slideshowImages.length - 1;
+  }
+  else{
+    currentImageCounter = currentImageCounter - 1;
+  }
+  slideshowImages[currentImageCounter].style.display = "block";
+}
