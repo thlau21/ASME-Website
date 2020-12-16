@@ -52,46 +52,32 @@ p {
   padding: 20px;
 }
 /*Nav styles*/
-.nav {
-  padding: 40px;
-}
-.nav-wrapper {
-  display: flex;
-}
-
-.nav > .nav-wrapper > div {
-  text-decoration: none;
+.nav-bar > .nav-bar-wrapper {
+  list-style-type: none;
+  border: 1px solid #555;
   margin: 0 auto;
-}
-/* .left-link{
-  margin-right: 75x;
-}
-.center-link{
-  margin-right: 75px;
-  margin-left: 75px;
-}
-.right-link{
-  margin-left: 75px;
-} */
-.nav-link-wrapper {
-  height: 22px;
-  border-bottom: 1px solid transparent;
-  transition: border-bottom 0.5s;
+  padding: 0;
+  overflow: hidden;
+  background: black;
 }
 
-.nav-link-wrapper a {
-  color: gray;
+.nav-bar > .nav-bar-wrapper > li {
+  float: left;
+}
+
+.nav-bar > .nav-bar-wrapper > li a {
+  display: block;
+  color: orange;
+  padding: 10px 20px;
+  width: 276.2px;
   text-decoration: none;
-  transition: color 0.5s;
+  text-align: center;
 }
 
-.nav-link-wrapper:hover {
-  border-bottom: 1px solid black;
+.nav-bar > .nav-bar-wrapper > li a:hover {
+  background-color: white;
 }
 
-.nav-link-wrapper a:hover {
-  color: black;
-}
 /*Read More button*/
 .pdf {
   margin: 100px;
@@ -115,23 +101,30 @@ p {
 }
 .image-slideshow {
   width: 100%;
-  height: 100%;
+  height: 80%;
   object-fit: cover;
   display: none;
 }
-/*.image-slideshow:first-child {
-  display: block;
-}*/
 
-/*body {
-  background-image: url(images/Tiger.jpg);
+.leftButton {
+  position: absolute;
+  left: 0;
+  bottom: 50%;
+  background-color: white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.rightButton {
+  position: absolute;
+  right: 0;
+  bottom: 50%;
+  background-color: white;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
-ul {
-  list-style-type: none;
-  display: flex;
-  margin: 0;
-  padding: 0;
-  border: 3px solid black;
+#sponsorship{
+  width: 700px;
+  height: 700px;
+  align-items: center;
 }
-*/

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8" />
@@ -9,14 +9,16 @@
     <title>ASME</title>
     <link rel="stylesheet" href="styles.css" />
     <script src="main.js" defer></script>
+    <script src="https://kit.fontawesome.com/3d472c7693.js" crossorigin="anonymous"></script>
+    <!--<link href="path/to/lightbox.css" rel="stylesheet" />-->
   </head>
   <body>
     <!--Name of club-->
     <header>
-      <a target="_blank" href="index.html"><img src="images/Logo_of_the_ASME.jpg"></a>
+      <a target="_blank" href="index.html"><img src="images/asme_profile_photo_3_3t.jpg" style="margin-top: 0 auto;"></a>
       <h1>
         <strong
-          ><a href="index.html"
+          ><a style="color: black" href="index.html"
             >ASME CLUB AT UNIVERSITY OF THE PACIFIC</a
           ></strong>
       </h1>
@@ -26,38 +28,40 @@
       <!--container-->
       <div class="container">
         <!--class for nav bar-->
-        <div class="nav">
-          <!--class for each nav bar component-->
-          <div class="nav-wrapper">
-            <!--class for nav links-->
-            <!--I added some inline css to the nav elements to make them more centered on the page-->
-            <div class="nav-link-wrapper" style = "margin-right: 75px;">
-              <a href="about.html">About us</a>
-            </div>
-            <div class="nav-link-wrapper" style = "margin-left: 75px; margin-right: 75px;">
-              <a href="gallery.html">Gallery</a>
-            </div>
-            <div class="nav-link-wrapper" style = "margin-left: 75px;">
-              <a href="new-member.html">New Member Info</a>
-            </div>
-          </div>
+        <div class="nav-bar">
+          <!--class for wrapper-->
+          <ul class="nav-bar-wrapper">
+            <!--elements of nav bar-->
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="new-member.html">New Member Information</a></li>
+            <li><a href="sponsors.html">Sponsors</a></li>
+          </ul>
         </div>
         <div class="center" style="background-color: #212529;">
-        <h1 style="font-size: 50px;">ASME CLUB</h1>
-        <!-- I added some margin to the paragraph below with inline css-->
-        <p style="font-size: 20px; color: white; margin-bottom: 20px;">A community for engineers to learn from each other and work on cool projects</p>
-        <div class="slide">
-          <img src="images/Home1.jpg" class="image-slideshow">
-          <img src="images/Home2.jpg" class="image-slideshow">
-          <img src="images/Home3.jpg" class="image-slideshow">
-          <img src="images/Home4.jpg" class="image-slideshow">
-          <img src="images/Home5.jpg" class="image-slideshow">
-          <img src="images/Home6.jpg" class="image-slideshow">
-          <img src="images/Home7.jpg" class="image-slideshow">
-          <img src="images/Home8.jpg" class="image-slideshow">
-          <img src="images/Home9.jpg" class="image-slideshow">
+          <h1 style="font-size: 50px;">ASME CLUB</h1>
+          <!-- I added some margin to the paragraph below with inline css-->
+          <p style="font-size: 20px; color: white; margin-bottom: 20px;">
+            A community for engineers to learn from each other and work on cool projects
+          </p>
+          <div class="slide">
+            
+            <img src="images/Home1.jpg" class="image-slideshow">
+            <img src="images/Home2.jpg" class="image-slideshow">
+            <img src="images/Home3.jpg" class="image-slideshow">
+            <img src="images/Home4.jpg" class="image-slideshow">
+            <img src="images/Home5.jpg" class="image-slideshow">
+            <img src="images/Home6.jpg" class="image-slideshow">
+            <img src="images/Home7.jpg" class="image-slideshow">
+            <img src="images/Home8.jpg" class="image-slideshow">
+            <img src="images/Home9.jpg" class="image-slideshow">
+            <!--button for previous image-->
+            <button type="button" class="leftButton" onclick="displayPreviousImage()"><a class="previous-round" style="color: orange;">&#8249;</a></button>
+            <!--button for next image-->
+            <button type="button" class="rightButton" onclick="nextImage()"><a class="next-round" style="color: orange;">&#8250;</a></button>
+          </div>
         </div>
-      </div>
       </div>
       <!--header for section-->
       <h2>Get in touch with our President!</h2>
@@ -74,5 +78,6 @@
       <a target="_blank" href="https://www.instagram.com/asme_uop/?hl=en"><img src="images/instagram.png" alt="logo for instagram" style="width: 50px; height: 50px;"></a>
       <a target="_blank" href="https://www.youtube.com/channel/UCL9h1Lb8lJJjfLdnCe2H9_w?app=desktop"><img src="images/youtube-play.png" alt="logo for youtube" style="width: 50px; height: 50px;"></a>
     </footer>
+    <!--<script src="path/to/lightbox-plus-jquery.js"></script>-->
   </body>
 </html>
