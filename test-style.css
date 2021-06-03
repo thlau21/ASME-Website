@@ -2,7 +2,8 @@
 header {
   color: orange;
   text-align: center;
-  margin: 100px auto;
+  margin: 50px auto;
+  height: 180px;
 }
 
 /*I added this style section to the body so that the website takes up the full browser window
@@ -103,6 +104,7 @@ p {
 
 .nav-bar > .nav-bar-wrapper > li {
   float: left;
+  width:20%;
 }
 
 .nav-bar > .nav-bar-wrapper > li a {
@@ -126,8 +128,17 @@ p {
   width: 100%;
   height: 100%;
   max-height: 100vh;
-  margin: auto;
+  margin:auto;
+  overflow: hidden;
 }
+
+.caro-img {
+  display: block;
+  margin:auto;
+  width: 50vw;
+  height: 50vh;
+}
+
 /* The dots/bullets/indicators */
 .dot {
 
@@ -186,9 +197,11 @@ p {
 /* Next & previous buttons */
 .prev,
 .next {
-  cursor: pointer;
+  /* cursor: pointer;
+  display:block;
+  outline:none;
   position: absolute;
-  top: 50%;
+  /*top: 50%;
   width: auto;
   padding: 16px;
   margin-top: -22px;
@@ -197,12 +210,38 @@ p {
   font-size: 18px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
-  user-select: none;
+  user-select: none; */
+  position: absolute;
+  z-index: 999;
+  display: block;
+  padding:0 10px;
+  width: auto;
+  height:424px;
+  background: rgba(0,0,0,0);
+  color: #ffffff;
+  font-size:26px;
+  cursor: pointer;
+  border:none;
+  outline:none;
 }
 
-/* Position the "next button" to the right */
+div.disabled {
+  overflow-x: hidden; /*horizontal*/
+  overflow-y: scroll; /*vertical*/
+}
+
+/* Position the "next button" to the right*/
 .next {
-  right: 0;
+  right: 47vh;
+  top: 52%;
+  border-radius: 3px 0 0 3px;
+}
+
+/* position the prev button to the left */
+
+.prev{
+  left: 47vh;
+  top: 52%;
   border-radius: 3px 0 0 3px;
 }
 

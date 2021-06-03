@@ -14,7 +14,7 @@
   </head>
   <body>
     <header>
-      <a target="_blank" href="index.html"><img src="images/asme_profile_photo_3_3t.jpg" style="margin-top: 0 auto;"></a>
+      <a target="_blank" href="index.html" style="margin-top: 0 auto;"><img src="images/asme_profile_photo_3_3t.jpg" style="margin-top: 0 auto; width: 140px; height: 140px;"></a>
       <h1>
         <strong
           ><a style="color: black" href="index.html"
@@ -41,21 +41,26 @@
       <!-- I added some margin to the paragraph below with inline css-->
       <p style="font-size: 20px; color: white; margin-bottom: 20px;">A community for engineers to learn from each other and work on cool projects</p>
     </div>
+    <!-- <button onclick="prevSlide()" class="prev">&#10094;</button>
+    <button onclick="showSlides()" class="next">&#10095;</button> -->
     <div class="slideshow-container">
       <div class="mySlides fade">
-          <img src="images/Home1.jpg" style="width: 100vw;height: 100vh">
+        <!-- style="width: 80vw;height: 80vh" -->
+          <img src="images/Home1.jpg" class = "caro-img">
 
       </div>
       <div class="mySlides fade">
 
-          <img src="images/Home2.jpg" style="width: 100vw;height: 100vh">
+          <img src="images/Home2.jpg" class = "caro-img">
 
       </div>
       <div class="mySlides fade">
 
-          <img src="images/Home3.jpg" style="width: 100vw;height: 100vh">
+          <img src="images/Home3.jpg" class = "caro-img">
 
       </div>
+      <button onclick="prevSlide()" class="prev">&#10094;</button>
+      <button onclick="showSlides()" class="next">&#10095;</button>
       <div style="text-align:center; margin:-5vh;">
 
           <span class="dot"></span>
@@ -63,8 +68,10 @@
           <span class="dot"></span>
 
       </div>
+      <!-- button
       <a class="prev" onclick="prevSlide()">&#10094;</a>
       <a class="next" onclick="showSlides()">&#10095;</a>
+      -->
   </div>
     <!--
       <div class="slide">
@@ -88,6 +95,21 @@
         </div>
       </div>
       -->
+      <!--header for section-->
+      <h2>Get in touch with our President!</h2>
+      <!--address and email of president-->
+      <p style = "margin: 20px auto">3601 Pacific Ave, Stockton, CA 95211</p><!--I added inline css here-->
+      <p style = "margin:30px auto;"><a href="mailto:s_lucas2@u.pacific.edu" style="color: black; text-decoration: none;">s_lucas2@u.pacific.edu</a></p><!--I added inline css here-->
+    </main>
+    <!--footer class for bottom of page-->
+    <div class="footer">
+      <!--links on pictures to click for social media and such-->
+      <a target="_blank" href="https://pacific.presence.io/organization/american-society-of-mechanical-engineers"
+        ><img src="images/Pacific.jpg" alt="logo for pacific presence" style="width: 42px; height: 42px;"
+      /></a>
+      <a target="_blank" href="https://www.instagram.com/asme_uop/?hl=en"><img src="images/instagram.png" alt="logo for instagram" style="width: 50px; height: 50px;"></a>
+      <a target="_blank" href="https://www.youtube.com/channel/UCL9h1Lb8lJJjfLdnCe2H9_w?app=desktop"><img src="images/youtube-play.png" alt="logo for youtube" style="width: 50px; height: 50px;"></a>
+    </footer>
       <script src="path/to/lightbox-plus-jquery.js"></script>
   </body>
 </html>
